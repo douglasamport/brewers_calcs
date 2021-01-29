@@ -1,3 +1,20 @@
+/* Layout TO DO list
+ * Layout Header
+ * style Header
+ * layout footer
+ * style footer
+ * Placeholder Logo
+ * Style Nav Area
+ * Adjust reset button size
+ * align the Input
+ * make inputs taller
+ * Box-shadows for areas
+ * shadows for header footer?  (research)
+ * make javascript to-do list
+ */
+
+
+
 
 /*color variables*/
 :root {
@@ -95,37 +112,144 @@ html {
         display: flex;
         flex-direction: column;
     }
+
+    a {
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: .9em;
+        font-weight: 500;
+        letter-spacing: .03em;
+        color: var(--color-blue);
+      }
+    a:hover:not(.logo_link) {
+      font-size: 1em;
+    }
+    a:visited {
+      color: var(--color-blue)
+    }
 /*******************************************/
 /*top nav header*/
+.header_group-container {
+    margin: auto;
+}
+
+div.header_links-container > div > a {
+    font-size: 1.5em;
+    color: black;
+}
+div.header_links-container > div > a:hover {
+    color: var(--color-blue);
+    font-size: 1.5em;
+}
+
+.header_links-container {
+    position: relative;
+    top: 23px;
+    padding-left:200px;
+}
+
+.head-pad {
+    padding-right: 20px;
+}
+
+
+
+.disp {
+    
+    border: 1px solid red;
+}
+
+.header-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
   .header {
       grid-row: 1/2;
       grid-column: 1/6 ;
       background-color: var(--color-lt-yellow);
       border-bottom: 4vh solid var(--color-yellow);
       margin-bottom: 0px;
+      height: 10vh;
       min-height: 10vh; 
       justify-self: stretch;
   }
 
-.center-border{
-    border: 2px solid var(--color-brown);
-    border-radius: 5%;
-}
+  .logo_group-container {
+      border: 1px solid red;
+  }
+  
+  .logo {
+      opacity: 100%;
+      position: relative;
+      margin-left: -20px;
+      top: -15px;
+  }
+
+  .logo_pint {}
+
+  .logo_text-column {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+  }
+  .logo_text {
+    font-family: 'Fraunces', serif;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding-left: 10px;
+      font-size: 1.3em;
+      color: black;
+  }
+  .logo_top-text {
+      margin-top: 1px ;
+  }
+  .logo_bot-text {
+      margin-top: -7px;
+  }
+  .logo_background {
+      align-self: flex-start;
+      box-shadow: 0 0 30px 30px  rgba(255, 255, 255, 0.3);
+      position: relative;
+      background-color: rgba(255, 255, 255, 0.3);
+      width: 40px;
+      height: 20px;
+      
+      margin-right: auto;
+      margin-left: auto;
+  }
 
 
-/*nav section*/
+/*nav & Adspace section*/
   .nav {
     grid-row: 3/5;
     grid-column: 2/3;
     background-color: ;
-    
     padding: 20px;   
     max-width: 16vw; 
     min-width: 250px;  
     justify-self: end;
     align-self: stretch;
 }
+
+.adspace {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-color:;
+    margin-left: 0px;
+    min-width: 250px;
+    padding: 20px;
+    justify-self: end;
+    align-self: stretch;
+}
+
 /*main center section including calc*/
+.brown-border{
+    border: 2px solid var(--color-brown);
+    border-radius: 5%;
+}
 .main_center {
     grid-row: 2/5;
     grid-column: 3/5;
@@ -173,17 +297,7 @@ button#update {
 
 
 /****************************/
-.adspace {
-    grid-row: 2/3;
-    grid-column: 2/3;
-    background-color:;
-    margin-left: 0px;
-    min-width: 250px;
-    padding: 20px;
-    justify-self: end;
-    align-self: stretch;
-    
-}
+
 .footer {
     z-index: 2;
     grid-row:5/6;
