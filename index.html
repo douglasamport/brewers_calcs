@@ -3,20 +3,96 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
 
-  <title>Boilerplate</title>
-  <meta name="description" content="Boilerplate Site">
-  <meta name="6865" content="SitePoint">
+  <title>Brewers Calcs | ABV Calculator</title>
+  <meta name="ABV Calculator" content="Beer brewing ABV Calculator">
+  <meta name="6865" content="ABV Calculator">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/calc_form_abv.css">
 
   <style></style>
 </head>
 
 <body>
-<div>
+
+<div id="main-container" class="grid-container">
+  
+  <div class="header"></div>
+  <div class="nav center-border">
+    <ul class="info-list">Brewing Information
+      <li class="info-links"><a href="">one</a></li>
+      <li class="info-links"><a href="">one</a></li>
+      <li class="info-links"><a href="">one</a></li>
+      <li class="info-links"><a href="">one</a></li>
+    </ul>
+    <ul class="calc-list">Calculators
+      <li class="calc-links"><a href="">one</a></li>
+      <li class="calc-links"><a href="">one</a></li>
+      <li class="calc-links"><a href="">one</a></li>
+      <li class="calc-links"><a href="">one</a></li>
+    </ul>
+  </div>
+  <div class="main_center center-border">
+
+    <!--***********************-->
+
+    <div class="intro">
+      <h2>ABV Calculator</h2>
+      <p>Finds ABV based on change in specific gravity. Enter original gravity and final gravity to calculate your alcohol by volume </p>
+    </div>
+    <div class="calculator column">
+      <div id="og-container" class="form-row">
+        <p>Original Gravity (OG):</p>
+        <div class="justleft">
+          <input id="og-input" type="number" class="sized" label="abv" placeholder="1.050">
+        </div>
+      </div>
+      <div id="fg-container" class="form-row">
+        <p>Final Gravity</p>
+        <div class="justleft"><input id="fg-input" type="number" class="sized" label="abv" placeholder="1.010">
+        </div>
+      </div>
+      <div id="update-container" class="form-row">
+        <p>delete me</p>
+        <div id="" class="justleft">
+          <button id="update" class="sized" label="abv">update</button>
+        </div>
+      </div>
+      <div id="abv-container" class="form-row">
+        <p>Alcohol By Volume</p>
+        <p id="abv">09.99%</p>
+      </div>
+      <div id="appt-atten-container" class="form-row">
+        <p>Apparent Attenuation</p>
+        <p id="appt-atten">70%</p>
+      </div>
+      <div id="og-display-container"class="form-row">
+        <p>Apparent Attenuation</p>
+        <p id="og-display">1.0xx</p>
+      </div>
+      <div id="fg-display-container" class="form-row">
+        <p>Apparent Attenuation</p>
+        <p id="fg-display">1.0xx</p>
+      </div>
+    </div>
+    <div class="description">
+      <p>Additional info about this calculator</p>
+      <p>Legal Disclaimer: No warranty or guarantee of accuracy is provided for the information provided by this calculator.
+      <p>Accessability Note: TBD</p>
+    </div>
+  </div>
+
+  <!--*************************************-->
+
+  <div class="adspace center-border column">
+    <div class="banner"></div>
+  </div>
+  <div class="footer"></div>
   
 </div>
+
 
 
 
