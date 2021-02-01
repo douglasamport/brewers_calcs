@@ -20,7 +20,7 @@
 
 <div id="main-container" class="grid-container">
   
-  <div class="header">
+  <div class="header shadow-shal">
     <div class="header_group-container header-row">
       <div class="logo row logo-grid">
         <div class="logo_background 2"></div>
@@ -49,7 +49,7 @@
   </div>
 
 
-  <div class="nav brown-border">
+  <div class="nav brown-border shadow-deep">
     <ul class="info-list">Brewing Information
       <li class="info-links"><a href="">one</a></li>
       <li class="info-links"><a href="">one</a></li>
@@ -57,69 +57,79 @@
       <li class="info-links"><a href="">one</a></li>
     </ul>
     <ul class="calc-list">Calculators
-      <li class="calc-links"><a href="">one</a></li>
+      <li class="calc-links"><a href="">ABV Calculator</a></li>
       <li class="calc-links"><a href="">one</a></li>
       <li class="calc-links"><a href="">one</a></li>
       <li class="calc-links"><a href="">one</a></li>
     </ul>
   </div>
-  <div class="main_center brown-border">
+
+  <div class="main_center brown-border shadow-deep">
 
     <!--***********************-->
 
     <div class="intro">
-      <h2>ABV Calculator</h2>
+      <h1>ABV Calculator</h1>
       <p>Finds ABV based on change in specific gravity. Enter original gravity and final gravity to calculate your alcohol by volume </p>
     </div>
+    <form name="abv calculator"  action="">
     <div class="calculator column">
+      
       <div id="og-container" class="form-row">
-        <p>Original Gravity (OG):</p>
-        <div class="justleft">
-          <input id="og-input" type="number" class="sized" label="abv" placeholder="1.050">
-        </div>
+        <label class="form-half baseline" for="original-gravity">Original Gravity (OG):</label>
+        <input class="shadow-sharp" name="original-gravity" id="original-gravity" type="number" class="sized" label="abv" placeholder="1.050">
       </div>
       <div id="fg-container" class="form-row">
-        <p>Final Gravity</p>
-        <div class="justleft"><input id="fg-input" type="number" class="sized" label="abv" placeholder="1.010">
-        </div>
+        
+          <label class="form-half baseline" for="final-gravity" >Final Gravity (FG):</label>
+          <input class="shadow-sharp" name="final-gravity input" id="final-gravity" type="number" class="sized" label="abv" placeholder="1.010">
+        
       </div>
-      <div id="update-container" class="form-row">
-        <p>delete me</p>
-        <div id="" class="justleft">
-          <button id="update" class="sized" label="abv">update</button>
-        </div>
+      <div id="reset-container" class="form-row">
+        <p class="form-half" ></p>
+        <button class="reset shadow-sharp" id="update" class="sized" label="abv">update</button>
+        
       </div>
       <div id="abv-container" class="form-row">
-        <p>Alcohol By Volume</p>
-        <p id="abv">09.99%</p>
+        <p class="form-half">Alcohol By Volume</p>
+        <p class="form-half" id="abv">09.99%</p>
       </div>
       <div id="appt-atten-container" class="form-row">
-        <p>Apparent Attenuation</p>
-        <p id="appt-atten">70%</p>
+        <p class="form-half">Apparent Attenuation</p>
+        <p class="form-half"id="appt-atten">70%</p>
       </div>
       <div id="og-display-container"class="form-row">
-        <p>Apparent Attenuation</p>
-        <p id="og-display">1.0xx</p>
+        <p class="form-half">Original Gravity</p>
+        <p class="form-half" id="og-display">1.0xx</p>
       </div>
       <div id="fg-display-container" class="form-row">
-        <p>Apparent Attenuation</p>
-        <p id="fg-display">1.0xx</p>
+        <p class="form-half">Final Gravity</p>
+        <p class="form-half" id="fg-display">1.0xx</p>
       </div>
     </div>
+  </form>
     <div class="description">
       <p>Additional info about this calculator</p>
       <p>Legal Disclaimer: No warranty or guarantee of accuracy is provided for the information provided by this calculator.
-      <p>Accessability Note: TBD</p>
     </div>
   </div>
 
   <!--*************************************-->
 
-  <div class="adspace brown-border column">
-    <div class="banner"></div>
+  <div class="adspace brown-border shadow-deep">
+    
+   <div class="banner"></div>
   </div>
-  <div class="footer"></div>
-  
+  <div class="footer shadow-rev">
+    <div class="footer_links-container  footer-row">
+      <div class="foot-pad foot-link"> <a href="">contact</a> </div>
+      <div class="foot-pad foot-link"> <a href="">report problem</a> </div>
+      <div class="foot-pad foot-link"> <a href="">donate</a> </div>
+      <div class="foot-pad foot-link"> <a href="">accessability</a> </div>
+      <div class="foot-link"> <a href="">terms</a> </div>
+    </div>
+  </div>
+    
 </div>
 
 
