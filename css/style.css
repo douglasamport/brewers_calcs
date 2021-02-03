@@ -645,6 +645,14 @@ div.foot-link > a:hover{
         min-width:360px; 
         justify-self: center;    
     }
+
+    .footer {
+    
+        margin-bottom: 3vh;
+    }
+    .footer_links-container {
+        margin-top: 3vh;
+    }
 }
 
 /*******************************************/
